@@ -11,25 +11,55 @@
       <!-- form - input tag 어떤 값을 작성하게 하는 tag self-closing tag이다.-->
       <input />
       <!-- attribute placeholder = 아무것도 입력하지 않았을시 나타나는 글자 type - input칸의 속성을 지정해주는 attribute -->
-      <input placeholder="name" type="text" />
-      <input palceholder="Last name" type="text" />
-      <input placeholer="Username" type="text" />
-      <input placeholer="Password" type="password" />
-      <!-- type - submit attribute submit이라는 버튼을 생성 value attribute 사용시 버트에 작성된 이름을 변경 가능-->
-      <input type="submit" value="Create Account" />
+      <div>
+        <input placeholder="name" type="text" />
+        <input palceholder="Last name" type="text" />
+        <input placeholer="Username" type="text" />
+        <input placeholer="Password" type="password" />
+        <!-- type - submit attribute submit이라는 버튼을 생성 value attribute 사용시 버트에 작성된 이름을 변경 가능-->
+        <input type="submit" value="Create Account" />
+      </div>
       <!-- attribute - disable 말 그대로 비활성화 하는 attribute submit과 input에도 사용가능 -->
-      <input placeholer="Password" type="password" disabled />
-      <input type="submit" value="Create Account" disabled />
-      <!-- attribute - required form을 검증가능 = 꼭 필요한 정보를 받아내기 가능 -->
-      <input required placeholer="Password" type="password" />
-      <!-- attribute - minlength input에 필요한 글자 최소치 설정 가능 -->
-      <input required placeholer="Password" minlength="10" type="password" />
+      <div>
+        <input placeholer="Password" type="password" disabled />
+        <input type="submit" value="Create Account" disabled />
+        <!-- attribute - required form을 검증가능 = 꼭 필요한 정보를 받아내기 가능 -->
+        <input required placeholer="Password" type="password" />
+        <!-- attribute - minlength input에 필요한 글자 최소치 설정 가능 -->
+        <input required placeholer="Password" minlength="10" type="password" />
+      </div>
       <!-- type - file = 파일넣기 기능-->
-      <input type="file" />
-      <!-- attribute accept = 특정확장자만 파일 선택 가능하게 함 (특정 형식을 전부 선택가능하게 가능 ex.images/* video/* audio/*)-->
-      <input type="file" accept=".pdf" />
-      <input type="file" accept="image/*" />
-      <input type="file" accept=".pdf, .png" />
+      <div>
+        <input type="file" />
+        <!-- attribute accept = 특정확장자만 파일 선택 가능하게 함 (특정 형식을 전부 선택가능하게 가능 ex.images/* video/* audio/*)-->
+        <input type="file" accept=".pdf" />
+        <input type="file" accept="image/*" />
+        <input type="file" accept=".pdf, .png" />
+      </div>
+      <!-- label tag = 사용자에게 선택가능한 체크박스를 표시 -->
+      <div>
+        <label for="Profile">Profile Photo</label>
+        <!-- 항상 input과 함께 작동한다 label에는 for이 input에는 id가 있어야 하며 value가 서로 일치해야 하고, 꼭 하나만 존재해야한다. for과 id가 label과 id를 매칭시키는 역할 -->
+        <input id="Profile" type="file" accept="image/*" />
+      </div>
+      <!-- id는 body 안의 모든 tag에 적용가능한 attribute이다. = 고유식별자 css활용에 id가 사용된다. -->
+      <!-- semantic HTML - 값이 없는 tag, 보기만해도 어떤 역할을 하는지 알 수 있다. 자체적으로 의미 부여가 되어있다. -->
+      <!-- tag div 공간 분할을 위한 tag = println이나 \n과 같은 역할 -->
+      <div><input placeholer="Username" type="text" /></div>
+      <input placeholer="Password" type="password" />
     </form>
+    <footer>&copy; 2023 mlngwan.</footer>
+    <p> 1. vsc는 코드 오작성시 빨간색으로 표시된다.</p>
+    <p>  2. atrribute 값은 항상 "" 큰따옴표 안에 작성한다.</p>
+    <p>  3. id라는 attribute를 가지는 tag들이 존재한다. ex) image, paragraph, header ...</p>
+    <p>  4. src라는 attribute는 모든 tag가 가질수 없다.</p>
+    <p>  5. 코드 자체에 의미가 부여된 semantic tag가 있다. ex) header, navigation, footer ...</p>
+    <p>   6. semantic tag로 코드를 작성하는 것은 중요하다. 보기에 훨씬 더 좋고 좋은 프로그래머가 되기 위해선 필수 사항이다. 다른 사람과 공유할때 이해도 상승!</p>
+    <p>  7. header, main, footer, navigation, hgroup 등 <>속 태그들은 전부 container 이다. 전부 div tag로 대체 가능하다.</p>
+    <p> 8. div tag는 가장 통용적인 container이다. 대체가능하지만 코드를 보고 의미를 파악하기 위해 semantic tag를 사용한다.</p>
+    <p>  9. 모든 tag와 attribute는 암기할 필요가 없다. 필요시 검색을 통해 적용가능하다.</p>
+    </p>
   </body>
 </html>
+<!-- 커서를 동시입력하고 싶을때 alt키를 이용한다. -->
+<!-- div를 과사용하지 않고 보기 편한 semantic tag들을 사용해서 의미있는 box사용하기 -->
