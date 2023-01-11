@@ -1,0 +1,7 @@
+/* external css */
+/* css가 하는일은 html태그를 가르키는 일을 한다. ex) 이 태그는 초록색이다. */
+/* html의 tag는 css에서 selector의 역할을 한다. html의 tag가 css에서 tag 역할을 하는 것과 비슷함*/
+/* selector는 여러 속성을 가질 수 있기 때문에 {중괄호}를 이용하여 속성들을 작성한다. */
+body {
+  background-color: red;
+}

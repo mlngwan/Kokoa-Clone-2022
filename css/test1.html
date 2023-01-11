@@ -1,0 +1,35 @@
+<!-- css를 사용하는 방법1 html 파일 안에서 css를 적용하는 방법-->
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>mlngwan css test page</title>
+    <!-- inline css -->
+    <!-- head tag 안에서 <style> tag로 css를 html 안에서 적용가능하다! -->
+    <style>
+      /* tag를 select하기 *같은 이름으로 써야한다.*/
+      h1 {
+        /* property : value ; 식으로 작성하면 된다. *c언어와 같이 ;로 닫기. */
+        color: blue;
+        font-size: 50px;
+        font-weight: 800;
+        font-style: italic;
+        /* 아무것이나 작성 가능하지만 property별로 맞는 value값이 다 다르다. ex) color - blue font-size - px */
+      }
+      address {
+        text-align: center;
+        color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>css test</h1>
+    </header>
+    <main>
+      <address>Republic of Korea, Seoul</address>
+    </main>
+    <footer>&copy; 2023 KwonMK</footer>
+  </body>
+</html>
+<!-- css는 cascading(순서대로 진행된다.) style sheet이다.-->
+<!-- css는 위에서부터 아래로 (=cascading) 적용된다. *결국 적용되는 것은 마지막에 작성한 코드!* -->
