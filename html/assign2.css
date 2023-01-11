@@ -1,0 +1,29 @@
+#body {
+}
+#first {
+  background-color: tomato;
+  width: 480px;
+  height: 480px;
+}
+#second {
+  background-color: wheat;
+  padding: 50px;
+  width: 120px;
+  height: 30vh;
+}
+#third {
+  background-color: teal;
+  width: 30px;
+  height: 30px;
+}
+
+#fourth {
+  background-color: teal;
+  width: 30px;
+  height: 30px;
+}
+#fifth {
+  background-color: teal;
+  width: 30px;
+  height: 30px;
+}
