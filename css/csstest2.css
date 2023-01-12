@@ -1,0 +1,16 @@
+/* 웹사이트를 이루는 가장 기본적이고 중요한 요소는 block과 inline이다. */
+/* block 옆에 또 다른 block이 오지 않는다. */
+/* 대부분의 element는 block이다. */
+div {
+  height: 150px;
+  width: 150px;
+  background-color: tomato;
+}
+/* 옆에 다른 요소가 올 수 있는 것은 inline(in the same line)이다. */
+/* 아주 작은글, text, image가 inline에 포함된다. */
+/* 상대적으로 inline에 속하는 element가 적다. = inline에 해당되는 element들을 외우는게 빠르다.*/
+span {
+  /* block > inline 아니면 그 반대도 가능하다. display 사용하기 */
+  display: block;
+  background-color: turquoise;
+}
