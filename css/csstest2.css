@@ -2,15 +2,47 @@
 /* block 옆에 또 다른 block이 오지 않는다. */
 /* 대부분의 element는 block이다. */
 div {
-  height: 150px;
-  width: 150px;
-  background-color: tomato;
+  padding: 20px;
+  background-color: white padding;
 }
 /* 옆에 다른 요소가 올 수 있는 것은 inline(in the same line)이다. */
 /* 아주 작은글, text, image가 inline에 포함된다. */
 /* 상대적으로 inline에 속하는 element가 적다. = inline에 해당되는 element들을 외우는게 빠르다.*/
 span {
-  /* block > inline 아니면 그 반대도 가능하다. display 사용하기 */
+  /* block과 inline은 성질을 바꿀수있다 block > inline 아니면 그 반대도 가능하다. display 사용하기 */
   display: block;
   background-color: turquoise;
+}
+/* inline은 가지고 있으면 height와 width가 없다! (block은 그 반대) = inline은 box가 아니다!*/
+/* inline = no box block = box 특징 : 1.margin 2.padding 3.border*/
+/* 문서 전체에 적용하려면 html selector가 필요하다 */
+html {
+  background-color: tomato;
+}
+/* margin = box의 경계에서 맞닿아 있는 바깥에 있는 공간을 뜻함 */
+/* browser는 margin을 기본값으로 갖고있음, 만약 조정을 원한다면 margin-방향을 이용해야함 (margin-left, margin-top)*/
+/* 방향지정없이 px값을 주면 상하좌우 동시 적용된다. 만약 2개의 값을 주면 상하 - 좌우 로 적용되고 4개의 값을 주면 위-오른쪽-아래-왼쪽(시계방향순)으로 적용된다*/
+/* collapsing margin = 같은 높이(=경계가 같다)의 margin은 하나로 취급된다. <상 하 만 적용된다!> */
+/* padding = box의 경계에서 맞닿아 있는 안쪽에 있는 공간을 말한다.*/
+#first {
+  /* 내가 원하는 id를 선택하는것은 앞에 #id명 을 입력해주면 된다!*/
+  background-color: aqua;
+  height: 150px;
+  width: 150px;
+}
+#second {
+  background-color: black;
+  height: 100px;
+  width: 100px;
+}
+#third {
+  background-color: brown;
+  height: 50px;
+  width: 50px;
+}
+/* tag와 id의 속성들이 둘다 적용된다! */
+/* border = box의 경계를 말한다. 세가지 적용가능 - 경계의 굵기, 그리고 모양 그리고 색*/
+* {
+  border: 3px solid blueviolet;
+  /* *기호는 문서 전체를 뜻한다. */
 }
