@@ -46,3 +46,49 @@ html {
   border: 3px solid blueviolet;
   /* *기호는 문서 전체를 뜻한다. */
 }
+/* position을 정할수 있다. */
+/* flex box는 2차원상에서 내가 원하는 위치에 어디든 둘 수 있다. */
+/* 3 rules - 1) 자식 엘리멘트에 아무것도 적지말것.(=부모 엘리먼트에 적기)*/
+/* flex box 만들기위해 부모 엘리먼트에 display: flex; 선언 */
+/* 속성 - justify-content: *; = flex box들의 위치 선정 (center, flex-end, flex-start) main axis에 적용됨.*/
+/* align-content: *; cross axis에 적용됨.*/
+/* main axis와 cross axis는 설정을 통해 서로 교차가능. flex-direction 설정을 통해 가능 row=주축, 수평 column=교차축, 수직*/
+/* vh= viewport height 보이는 화면에 적응,적용(= 화면 크기에 따라 적용됨).*/
+/* 2차원 모양에서 main axis(= x축, 가로축, 수평, 디폴트) cross axis(= y축, 세로축, 수직)으로 생각하면 편함 */
+/* 속성 - wrap 화면크기에 따라 컨텐츠가 담기는 것을 정함. (wrap = 한줄에 들어가는 만큼 넣고 안들어가면 다음줄로 넘기기 nowrap= 한줄내에서 크기를 줄여 보이기) */
+
+#fix {
+  /* 위치를 조금만 이동하고 싶을때는 position을 이용한다.  */
+  position: fixed;
+  /* position: fixed; 는 화면을 어디로 스크롤 이동해도 같은 자리에 위치한다. top bottom right left 요소에 값을 주면 밑에 요소가 어디있던지 상관 X (=다른 레이어)*/
+  width: 300px;
+  height: 300px;
+  color: wheat;
+}
+
+#static {
+  position: static;
+  /* position: static; 은 가장 기본적인 상태 */
+  width: 300px;
+  height: 300px;
+  color: green;
+}
+
+#rela {
+  position: relative;
+  /* position: relative; 는 아주 약간만 위치를 이동할때 사용한다. 생성된 위치 기준으로 top bottom left right 설정을 가능하게함.*/
+  width: 300px;
+  height: 300px;
+  color: peachpuff;
+}
+
+#abso {
+  position: absolute;
+  /* position: absolute; 는 가장 가까운 position:relative; 부모를 기준으로 상하 좌우의 끝에 위치하게 한다. position:relative;가 없다면 body가 기준.*/
+  /* 부모가 relative인지를 꼭 확인하기 */
+  width: 300px;
+  height: 300px;
+  color: peachpuff;
+}
+/* pseudo Selector = 세부적인 elements 선택 방법, tag나 class, id를 이용하지 않고 selector 역할을 하는것. */
+/* 상당히 유용한 방법, html코드를 수정하지 않아도 css코드만 수정하면 사용가능하다. */
